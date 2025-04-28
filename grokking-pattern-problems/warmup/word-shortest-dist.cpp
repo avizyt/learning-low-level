@@ -17,7 +17,7 @@ int ShortestDistance(vector<string> &words, const string &word1, const string &w
             index2 = i;
         }
 
-        // olny calculate distance if both words have fund at least once
+        // only calculate distance if both words have found at least once
         if (index1 != -1 && index2 != -1)
         {
             minDistance = min(minDistance, abs(index1 - index2));
