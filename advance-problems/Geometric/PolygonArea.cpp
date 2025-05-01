@@ -12,10 +12,6 @@ You may assume that the polygon is simple, i.e., it does not intersect itself.
 
 Output
 Print one integer: 2a where the area of the polygon is a (this ensures that the result is an integer).
-Constraints
-
-3 \le n \le 1000
--10^9 \le x_i, y_i \le 10^9
 
 Example
 Input:
@@ -27,6 +23,9 @@ Input:
 
 Output:
 16
+
+Use Showlace formula
+source: https://en.wikipedia.org/wiki/Shoelace_formula
 
 */
 
@@ -44,3 +43,22 @@ struct Point
         return in;
     }
 };
+int main()
+{
+    int n;
+    cin >> n;
+    vector<Point> points(n);
+    for (auto &p : points)
+    {
+        cin >> p;
+    }
+    points.push_back(points[0]);
+
+    ll area = 0;
+    for (int i = 0; i < points.size(); ++i)
+    {
+        area +=
+            (1LL * points[i].x * points[i + 1].y - 1LL * points[i].y * points[i + 1].x);
+    }
+    std::cout << labs(area) << std::endl;
+}
