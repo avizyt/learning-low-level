@@ -94,8 +94,8 @@
     },
     "C_Cpp.errorSquiggles": "disabled",
     "code-runner.executorMap": {
-        "cpp": "cd $dir && g++ -std=c++23 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "c++": "cd $dir && g++ -std=c++23 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c++": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     },
     "github.copilot.enable": {
         "*": false,
