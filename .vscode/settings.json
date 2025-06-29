@@ -1,4 +1,5 @@
 {
+    // "editor.fontFamily": "BlexMono Nerd Font" ,
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
@@ -93,6 +94,7 @@
         "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
+    "code-runner.saveFileBeforeRun": true,
     "code-runner.executorMap": {
         "cpp": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "c++": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -102,5 +104,32 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
+    },
+    // monochromatic theme
+    // //  "breadcrumbs.enabled": false,
+    // "breadcrumbs.icons": false,
+    // "editor.colorDecorators": false,
+    // // "editor.cursorBlinking": "solid",
+    // // "editor.cursorStyle": "block",
+    // "editor.find.addExtraSpaceOnTop": false,
+    // // "editor.fontFamily": "'IBM Plex Mono', monospace",
+    // "editor.fontSize": 16,
+    // "editor.links": false,
+    // "editor.minimap.enabled": false,
+    // "editor.occurrencesHighlight":"off",
+    // "editor.renderLineHighlight": "all",
+    // "editor.renderWhitespace": "none",
+    // // "editor.roundedSelection": false,
+    // "editor.scrollbar.horizontal": "visible",
+    // "editor.scrollbar.vertical": "visible",
+    // "editor.selectionHighlight": false,
+    // "editor.showFoldingControls": "always",
+    // // "terminal.integrated.fontFamily": "'IBM Plex Mono', monospace",
+    // // "terminal.integrated.fontWeight": "300",
+    // // "workbench.editor.showIcons": false,
+    // "workbench.editor.tabCloseButton": "off",
+    // // "workbench.iconTheme": null,
+    // "workbench.tree.indent": 14,
+    // "workbench.tree.renderIndentGuides": "none",
+    // "workbench.editor.tabActionCloseVisibility": false
 }
