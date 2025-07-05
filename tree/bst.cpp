@@ -3,6 +3,7 @@
 #include <iostream>
 #include <memory>
 #include <queue>
+
 template <typename T> struct BinaryTreeNode {
   T data;
   std::shared_ptr<BinaryTreeNode<T>> left;
