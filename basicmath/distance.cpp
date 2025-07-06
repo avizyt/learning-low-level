@@ -109,14 +109,14 @@ int main() {
   //   cout << "Sqrt: " << sqrt(8);
 
   vector<Point2D> points = {{1., 6.}, {3., 1.}, {7., 2.}, {4., 4.}, {8., 5.}};
-  double detSum = det2D(points[0], points[1]) + det2D(points[1], points[2]) +
-                  det2D(points[2], points[3]) + det2D(points[3], points[4]) +
-                  det2D(points[4], points[5]);
+  // double detSum = det2D(points[0], points[1]) + det2D(points[1], points[2]) +
+  //                 det2D(points[2], points[3]) + det2D(points[3], points[4]) +
+  //                 det2D(points[4], points[5]);
 
-  cout << "Sum of all the point's Determinants: " << detSum << "\n";
+  // cout << "Sum of all the point's Determinants: " << detSum << "\n";
 
-  double areaOfPolygon = calculatePolygonAreaShoelace(points);
-  cout << "Area enclosed by the polygon from points: " << areaOfPolygon << "\n";
-  cout << "Area of Polygon: " << calculatePolygonArea(points);
+  cout << "Area enclosed by the polygon from points: "
+       << calculatePolygonAreaShoelace(points) << "\n";
+  cout << "Area of Polygon direct: " << calculatePolygonArea(points);
   return 0;
 }

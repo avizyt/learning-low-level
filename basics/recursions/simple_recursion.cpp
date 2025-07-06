@@ -1,22 +1,29 @@
 
 #include <iostream>
-int fibo(int n) {
-  if (n == 0) {
-    return 0;
-  }
-  if (n == 1 || n == 2) {
+typedef long long ll;
+
+ll factorial(int n) {
+  // 1. Base Case: If n is 0 or 1, return 1
+  if (n == 0 || n == 1) {
     return 1;
-  } else {
-    return (fibo(n - 1) + fibo(n - 2));
+  }
+  // Recursive step: n! = n * (n-1)
+  else {
+    return n * factorial(n - 1);
   }
 }
 
 int main() {
-  int n = 20;
-  //   int val = fibo(10);
-  for (int i = 0; i < n; ++i) {
+  int num;
+  std::cout << "Enter a non-negative integer: ";
+  std::cin >> num;
 
-    std::cout << i << "th Fibo = " << fibo(i) << "\n";
+  if (num < 0) {
+    std::cout << "Factorial is not defined for negative numbers." << std::endl;
+  } else {
+    std::cout << "Factorial of " << num << " is: " << factorial(num)
+              << std::endl;
   }
-  std::cout << n << "th Fibo = " << fibo(n) << "\n";
+
+  return 0;
 }
