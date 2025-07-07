@@ -56,7 +56,7 @@ void demonstrateRawPointers() {
   // The locker is never returned to the warehouse, even if you lose its number.
   // This memory remains occupied until the program ends, wasting resources.
   std::cout << "\n--- Demonstrating Memory Leak ---" << std::endl;
-  MyResource *leakedPtr = new MyResource(99);
+  // MyResource *leakedPtr = new MyResource(99);
   // Oops! Forgot to delete leakedPtr. The memory for MyResource(99) is lost.
   // The destructor for MyResource(99) will NOT be called here.
   std::cout << "Oops! Forgot to delete 'leakedPtr'. This is a memory leak."
