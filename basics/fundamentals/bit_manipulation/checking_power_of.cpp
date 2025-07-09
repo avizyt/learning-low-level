@@ -6,6 +6,11 @@ int main() {
   for (int n : arr) {
     // true: 1
     // false: 0
-    std::cout << (n && !(n & (n - 1)) ? 1 : 0);
+    std::cout << (n && !(n & (n - 1)) ? 1 : 0) << " ";
   }
+  std::cout << "\n";
+  std::cout << "===========================" << "\n";
+  std::cout << (5 & 4) << "\n";
+  std::cout << (5 & 0) << "\n";
+  std::cout << (5 & 1) << "\n";
 }
