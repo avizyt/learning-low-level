@@ -1,5 +1,5 @@
 {
-    // "editor.fontFamily": "BlexMono Nerd Font" ,
+    // "editor.fontFamily": "BlexMono Nerd Font",
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
